@@ -5,6 +5,9 @@ import { BsFillPersonCheckFill, BsFillPersonPlusFill } from 'react-icons/bs';
 
 export const Header: React.FunctionComponent = () => (
   <div className="header-container">
+    <NavLink className="nav-button profile" to="/my-account/my-profile">
+      <p>Profile</p>
+    </NavLink>
     <nav className="header-nav-container">
       <ul>
         <NavLink className="nav-button" to="/signin">

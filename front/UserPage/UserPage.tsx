@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import './UserPage.css';
 import { motion } from 'framer-motion';
 import { AccountNavigation } from './AccountNavigation/AccountNavigation';
+import { MyProfile } from './MyProfile/MyProfile';
 
 const PageVariants = {
   in: {
@@ -22,9 +23,9 @@ export const UserPage: React.FunctionComponent = () => (
     className="UserPage"
   >
     <AccountNavigation/>
-    <div>
+    <div className="UserPage_content">
       <Switch>
-        <Route exact path="/my-account/my-profile" component={null} />
+        <Route exact path="/my-account/my-profile" component={MyProfile} />
         <Route exact path="/my-account/my-recipes" component={null} />
         <Route exact path="/my-account/add-recipes" component={null} />
         <Route exact path="/my-account/settings" component={null} />
